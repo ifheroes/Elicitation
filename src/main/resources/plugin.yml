@@ -1,0 +1,7 @@
+api-version: 1.20
+main: de.dev.ffa.FFAPlugin
+
+name: IFH-FFA
+version: 1.0
+author: I_Dev, Infinityheroes
+description: The official FFA from Infinityheroes | Main Service
