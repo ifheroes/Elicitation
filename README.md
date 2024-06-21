@@ -1,25 +1,21 @@
 # Repository Name
+Elicitation
 
 ## Description
-Provide a brief description of the resource, its purpose, and functionality.
+Procedural Generated Maps, Extraction, Base Building, Leveling, Looting, PvE/(PvP), Tames and Live Time Events
 
 ## Maintainers
 List the people who are responsible for this repository:
-- **Name**: [GitHub Profile](https://github.com/username)
-- **Name**: [GitHub Profile](https://github.com/username)
+- **Name**: [GitHub Profile]([https://github.com/username](https://github.com/IDev-mc))
 
 
 ## Dependencies
 List all the dependencies required to run the project:
-- Dependency 1
-- Dependency 2
-- Dependency 3
+- Spigot 1.20.6 (will be updated to 1.21)
 
 ## Version History
 If applicable, provide a summary of the version history:
 - **Version 1.0.0**: Initial release.
-- **Version 1.1.0**: Added new features.
-- **Version 1.2.0**: Bug fixes and performance improvements.
 
 ## API References
 If applicable, provide references to the API and its usage:
