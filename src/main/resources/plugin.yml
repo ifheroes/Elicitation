@@ -1,7 +1,7 @@
 api-version: 1.20
-main: de.dev.ffa.FFAPlugin
+main: de.idev.ElicitationPlugin
 
-name: IFH-FFA
-version: 1.0
+name: Elicitation
+version: 0.1
 author: I_Dev, Infinityheroes
-description: The official FFA from Infinityheroes | Main Service
+description: The official Elicitation from Infinityheroes | Main Service
