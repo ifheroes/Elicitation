@@ -6,7 +6,7 @@ Procedural Generated Maps, Extraction, Base Building, Leveling, Looting, PvE/(Pv
 
 ## Maintainers
 List the people who are responsible for this repository:
-- **Name**: [GitHub Profile]([https://github.com/username](https://github.com/IDev-mc))
+- **Name**: (https://github.com/IDev-mc)
 
 
 ## Dependencies
