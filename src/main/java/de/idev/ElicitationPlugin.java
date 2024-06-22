@@ -7,5 +7,6 @@ public class ElicitationPlugin extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		super.onEnable();
+		System.out.println("hey");
 	}
 }
