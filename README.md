@@ -21,29 +21,4 @@ If applicable, provide a summary of the version history:
 If applicable, provide references to the API and its usage:
 - [API Documentation](https://ifheroes.github.io/ifheroes-apis/)
 
-## Installation Process
-Describe the steps to install and set up the project:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/username/repository-name.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd repository-name
-    ```
-
-3. Install the dependencies:
-    ```bash
-    npm install
-    ```
-
-4. Run the project:
-    ```bash
-    npm start
-    ```
-
-5. Additional setup steps, if any.
-
 Feel free to contact the maintainers if you encounter any issues during the installation process.
