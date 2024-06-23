@@ -1,28 +1,29 @@
 package de.idev.tools.data;
 
-import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 
-public class ItemDataStorage implements IDataStorage {
-
-	private ItemStack item;
-
-	public ItemDataStorage(ItemStack item) {
-		this.item = item;
+public class ItemDataStorage extends DataStorage {
+	
+	private ItemStack itemStack;
+	
+	public ItemDataStorage(ItemStack itemStack) {
+		super(itemStack.getItemMeta());
+		setItemStack(itemStack);
 	}
 
 	@Override
 	public <P, C> void set(String key, PersistentDataType<P, C> type, C value) {
-		ItemMeta meta = item.getItemMeta();
-		meta.getPersistentDataContainer().set(new NamespacedKey(plugin, key), type, value);
-		item.setItemMeta(meta);
+		super.set(key, type, value);
+		itemStack.setItemMeta(getHolder());
 	}
 
-	@Override
-	public <P, C> C get(String key, PersistentDataType<P, C> type) {
-		return item.getItemMeta().getPersistentDataContainer().get(new NamespacedKey(plugin, key), type);
+	public ItemStack getItemStack() {
+		return itemStack;
 	}
-
+	
+	private void setItemStack(ItemStack itemStack) {
+		this.itemStack = itemStack;
+	}
+	
 }

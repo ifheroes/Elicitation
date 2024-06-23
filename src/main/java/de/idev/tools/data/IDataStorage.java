@@ -2,6 +2,8 @@ package de.idev.tools.data;
 
 import javax.annotation.Nonnull;
 
+import org.bukkit.persistence.PersistentDataContainer;
+import org.bukkit.persistence.PersistentDataHolder;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,4 +24,6 @@ public interface IDataStorage {
 	 */
     <P, C> void set(@Nonnull String key,@Nonnull PersistentDataType<P, C> type,@Nonnull C value);
     <P, C> C get(@Nonnull String key,@Nonnull PersistentDataType<P, C> type);
+    boolean has(@Nonnull String key);
+    <T extends PersistentDataHolder> PersistentDataContainer getDataContainer(T something);
 }
