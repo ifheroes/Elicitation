@@ -10,6 +10,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.idev.ElicitationPlugin;
 
+/*
+ * A generic interface to modify the PersistantDataContainer(Bukkit) in a more organized and easy manor
+ */
 public interface IDataStorage {
 	
 	Plugin plugin = JavaPlugin.getPlugin(ElicitationPlugin.class);
