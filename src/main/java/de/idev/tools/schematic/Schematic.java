@@ -8,6 +8,7 @@ import org.bukkit.block.Block;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
+import de.idev.tools.location.SimpleLocation;
 import de.idev.tools.schematic.util.SchematicLoader;
 
 public class Schematic extends SchematicLoader{

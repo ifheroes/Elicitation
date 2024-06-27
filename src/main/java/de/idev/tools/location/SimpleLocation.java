@@ -1,4 +1,4 @@
-package de.idev.tools.schematic;
+package de.idev.tools.location;
 
 import com.google.gson.JsonObject;
 
@@ -44,9 +44,9 @@ public class SimpleLocation {
 	
 	public JsonObject getAsJson() {
 		JsonObject obj = new JsonObject();
-		obj.addProperty("x", x);
-		obj.addProperty("y", y);
-		obj.addProperty("z", z);
+		obj.addProperty("x", getX());
+		obj.addProperty("y", getY());
+		obj.addProperty("z", getZ());
 		return obj;
 	}
 	
