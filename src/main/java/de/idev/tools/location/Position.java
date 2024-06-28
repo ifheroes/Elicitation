@@ -7,7 +7,7 @@ import de.idev.tools.File;
 
 public class Position {
 	
-	private static File positionsFile = new File("warps.yml", null);
+	private static File positionsFile = new File("positions.yml", null);
 	private RotationalLocation location;
 	private String id;
 	

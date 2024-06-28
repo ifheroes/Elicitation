@@ -8,14 +8,14 @@ import org.bukkit.block.Block;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import de.idev.tools.location.SimpleLocation;
+import de.idev.tools.location.SimpleLocation3D;
 import de.idev.tools.schematic.util.SchematicLoader;
 
 public class Schematic extends SchematicLoader{
 
 	private List<SchematicBlock> blocks;
 	private String id;
-	private SimpleLocation origin;
+	private SimpleLocation3D origin;
 	
 	private static final String ORIGINID = "origin";
 	private static final String BLOCKID = "blocks";
@@ -30,7 +30,7 @@ public class Schematic extends SchematicLoader{
 		this(obj.get(SCHEMATICID).getAsString());	
 		JsonArray array = obj.get(BLOCKID).getAsJsonArray();
 		array.forEach(x -> blocks.add(new SchematicBlock(x.getAsJsonObject())));
-		if(obj.has(ORIGINID)) this.origin = new SimpleLocation(obj.get(ORIGINID).getAsJsonObject());
+		if(obj.has(ORIGINID)) this.origin = new SimpleLocation3D(obj.get(ORIGINID).getAsJsonObject());
 	}
 
 	public String getId() {
@@ -53,11 +53,11 @@ public class Schematic extends SchematicLoader{
 		this.blocks = blocks;
 	}
 
-	public SimpleLocation getOrigin() {
+	public SimpleLocation3D getOrigin() {
 		return this.origin;
 	}
 
-	public void setOrigin(SimpleLocation origin) {
+	public void setOrigin(SimpleLocation3D origin) {
 		this.origin = origin;
 		for(SchematicBlock block : this.blocks) {
 			block.setX(block.getX()-origin.getX());

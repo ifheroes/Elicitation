@@ -2,7 +2,7 @@ package de.idev.tools.location;
 
 import com.google.gson.JsonObject;
 
-public class RotationalLocation extends SimpleLocation{
+public class RotationalLocation extends SimpleLocation3D{
 
 	private double yaw;
 	private double pitch;

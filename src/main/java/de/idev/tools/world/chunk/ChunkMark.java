@@ -1,4 +1,4 @@
-package de.idev.tools.chunk;
+package de.idev.tools.world.chunk;
 
 public enum ChunkMark {
 
