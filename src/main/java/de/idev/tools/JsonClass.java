@@ -4,10 +4,10 @@ import com.google.gson.JsonObject;
 
 public abstract class JsonClass {
 
-	public JsonClass() {
+	protected JsonClass() {
 	}
 	
-	public JsonClass(JsonObject jsonObject) {
+	protected JsonClass(JsonObject jsonObject) {
 	}
 	
 	public abstract JsonObject getAsJson();

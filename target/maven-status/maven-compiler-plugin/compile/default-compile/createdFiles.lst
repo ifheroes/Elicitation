@@ -1,7 +1,6 @@
 de\idev\tools\File.class
+de\idev\tools\language\Message.class
+de\idev\tools\language\Language.class
 de\idev\tools\data\ItemDataStorage.class
 de\idev\ElicitationPlugin.class
 de\idev\tools\data\IDataStorage.class
-de\idev\tools\language\Message.class
-de\idev\tools\data\EntityDataStorage.class
-de\idev\tools\language\Language.class

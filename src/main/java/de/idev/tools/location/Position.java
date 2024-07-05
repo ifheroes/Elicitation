@@ -16,6 +16,8 @@ public class Position {
 		setId(id);
 	}
 	
+	//TODO: Get from json
+	
 	public Position(String id) {
 		this(new RotationalLocation(positionsFile.get(id, JsonObject.class)), id);
 	}
