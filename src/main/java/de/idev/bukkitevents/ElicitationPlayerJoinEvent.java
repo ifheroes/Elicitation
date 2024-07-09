@@ -5,7 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import de.idev.tools.language.Language;
+import de.idev.tools.data.PlayerProfile;
 import de.idev.tools.language.Message;
 
 public class ElicitationPlayerJoinEvent implements Listener{
@@ -26,7 +26,8 @@ public class ElicitationPlayerJoinEvent implements Listener{
 	}
 	
 	public void sendJoinMessage(Player player) {
-		player.sendMessage(Message.JOINMESSAGE.getText(Language.GER));
+		PlayerProfile playerProfile = new PlayerProfile(player);
+		player.sendMessage(Message.JOINMESSAGE.getText(playerProfile.getLanguage()));
 	}
 	
 	
