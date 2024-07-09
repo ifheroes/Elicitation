@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Elicitation</groupId>
 	<artifactId>Elicitation</artifactId>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>Alpha-0.1.1</version>
 
 	<build>
 		<plugins>

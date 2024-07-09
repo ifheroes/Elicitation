@@ -6,7 +6,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.idev.bukkitevents.ElicitationEntityDamageEntityEvent;
-import de.idev.tools.damagestats.DamageStatsAPI;
+import de.idev.tools.damagevisual.DamageVisualAPI;
 
 public class ElicitationPlugin extends JavaPlugin{
 	
@@ -26,7 +26,7 @@ public class ElicitationPlugin extends JavaPlugin{
 	private void registerEvents() {
 		PluginManager pluginManager = Bukkit.getPluginManager();
 		
-		pluginManager.registerEvents(new ElicitationEntityDamageEntityEvent(new DamageStatsAPI()), this);
+		pluginManager.registerEvents(new ElicitationEntityDamageEntityEvent(new DamageVisualAPI()), this);
 	}
 	
 	private void registerCommands() {

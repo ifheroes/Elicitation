@@ -1,4 +1,4 @@
-package de.idev.tools.damagestats;
+package de.idev.tools.damagevisual;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -8,7 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import de.idev.ElicitationPlugin;
 
-public class DamageStatsAPI {
+public class DamageVisualAPI {
 
 	public Entity createDisplayText(Location loc, String text) {
 		return loc.getWorld().spawn(loc, TextDisplay.class, entity -> {

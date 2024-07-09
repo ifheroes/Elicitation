@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public enum Message {
 
-	NOPERMISSION;
+	NOPERMISSION, JOINMESSAGE;
 	
 	Map<Language, String> messages = new EnumMap<>(Language.class);
 	

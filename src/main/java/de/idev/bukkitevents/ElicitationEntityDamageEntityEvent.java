@@ -7,14 +7,14 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
 import de.idev.ElicitationPlugin;
-import de.idev.tools.damagestats.DamageStatsAPI;
+import de.idev.tools.damagevisual.DamageVisualAPI;
 import de.idev.tools.events.DisplayDamageEvent;
 
 public class ElicitationEntityDamageEntityEvent implements Listener{
 	
-	private DamageStatsAPI api;
+	private DamageVisualAPI api;
 	
-	public ElicitationEntityDamageEntityEvent(DamageStatsAPI api) {
+	public ElicitationEntityDamageEntityEvent(DamageVisualAPI api) {
 		this.api = api;
 	}
 	
@@ -32,7 +32,7 @@ public class ElicitationEntityDamageEntityEvent implements Listener{
 		api.createDisplayText(displayDamageEvent.getLocation(), displayDamageEvent.getText(), displayDamageEvent.getTime());
 	}
 	
-	public DamageStatsAPI getDamageStatsAPI() {
+	public DamageVisualAPI getDamageStatsAPI() {
 		return this.api;
 	}
 	
