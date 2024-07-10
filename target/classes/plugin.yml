@@ -5,3 +5,7 @@ name: Elicitation
 version: ALPHA-0.1
 author: I_Dev, Infinityheroes
 description: The official Elicitation from Infinityheroes | Main Service
+
+commands:
+   gbuild:
+      description: temporary

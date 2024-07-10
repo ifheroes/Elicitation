@@ -10,7 +10,7 @@ import net.md_5.bungee.api.ChatColor;
  */
 public enum Message {
 
-	NOPERMISSION, JOINMESSAGE;
+	NOPERMISSION, PLAYERREQUIERED,JOINMESSAGE;
 	
 	Map<Language, String> messages = new EnumMap<>(Language.class);
 	

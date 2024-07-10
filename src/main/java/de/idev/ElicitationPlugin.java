@@ -5,9 +5,12 @@ import org.bukkit.event.Event;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import de.idev.bukkitevents.ElicitationEntityDamageEntityEvent;
-import de.idev.bukkitevents.ElicitationPlayerJoinEvent;
-import de.idev.tools.damagevisual.DamageVisualAPI;
+import de.idev.basebuilder.commands.BaseBuilderCommand;
+import de.idev.basebuilder.events.ElicitationPlayerMoveEvent;
+import de.idev.basebuilder.events.ElicitationPlayerInteractEvent;
+import de.idev.damageindicator.DamageVisualAPI;
+import de.idev.damageindicator.events.ElicitationEntityDamageEntityEvent;
+import de.idev.events.ElicitationPlayerJoinEvent;
 
 public class ElicitationPlugin extends JavaPlugin{
 	
@@ -31,10 +34,19 @@ public class ElicitationPlugin extends JavaPlugin{
 		
 		pluginManager.registerEvents(new ElicitationEntityDamageEntityEvent(new DamageVisualAPI()), this);
 		pluginManager.registerEvents(new ElicitationPlayerJoinEvent(), this);
+		
+		/*
+		 * Base Builder
+		 */
+		pluginManager.registerEvents(new ElicitationPlayerMoveEvent(), this);
+		pluginManager.registerEvents(new ElicitationPlayerInteractEvent(), this);
 	}
 	
 	private void registerCommands() {
-		
+		/*
+		 * Base Builder
+		 */
+		getCommand("gbuild").setExecutor(new BaseBuilderCommand());
 	}
 	
 	private void loadMessages() {

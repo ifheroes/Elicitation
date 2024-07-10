@@ -1,4 +1,4 @@
-package de.idev.bukkitevents;
+package de.idev.damageindicator.events;
 
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
@@ -7,7 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 
 import de.idev.ElicitationPlugin;
-import de.idev.tools.damagevisual.DamageVisualAPI;
+import de.idev.damageindicator.DamageVisualAPI;
 import de.idev.tools.events.DisplayDamageEvent;
 
 public class ElicitationEntityDamageEntityEvent implements Listener{

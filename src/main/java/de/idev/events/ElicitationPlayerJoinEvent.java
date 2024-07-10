@@ -1,4 +1,4 @@
-package de.idev.bukkitevents;
+package de.idev.events;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

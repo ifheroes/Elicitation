@@ -1,4 +1,4 @@
-package de.idev.tools.damagevisual;
+package de.idev.damageindicator;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
